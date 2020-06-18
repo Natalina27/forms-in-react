@@ -19,33 +19,12 @@ const Form = ({
         {label: 'E-MAIL', value: email, editor: false, id: 5, role},
     ];
 
-//     console.log('role', role);
-//
-//     // попытка редактировать код по нажатию кнопки
-//
-//     const [editData, setEditData] = useState(arrayInfo);
-//
-//     console.log(editData);
-//
-//     const handleInputChange = e => {
-//         const { target } = e;
-//         const value = target.type === 'checkbox' ? target.checked : target.value;
-//         const { name } = target;
-//
-//         setEditData({ ...arrayInfo, [value]: value });
-//
-//         console.log('target:', target);
-//         console.log('value:', value);
-//         console.log('name:', name);
-//     };
-//
-//     const handleSubmit = e => {
-//         e.preventDefault();
-//         //setEditData({...editData.value})
-//     };
-//
+    console.log('name', name);
+
+
     return (
         <>
+            <div className={s.container}>
             {arrayInfo.map(item => (
                 <div key={item.id} className={s.infoContainer}>
                     <div className={s.infoElement}>
@@ -66,7 +45,7 @@ const Form = ({
                                 type="text"
                                 className={s.input}
                                 value={item.value}
-                                //onChange={handleInputChange}
+                                onChange={()=>{}}
                             />
                         </div>
                         <div
@@ -91,59 +70,14 @@ const Form = ({
                             <label
                                 className={s.editorIcon}
                                 htmlFor={`change`}
-                                //onClick={handleSubmit}
-                                //onClick={handleInputChange}
                             />
                         </div>
                     </div>
                 </div>
             ))}
+            </div>
         </>
     );
 };
-
-// const PersonPage: React.FC<StoreType & RouteComponentProps<any>> = ({
-//                                                                         match,
-//                                                                         user,
-//                                                                         person,
-//                                                                         history,
-//                                                                     }) => {
-//     const { organization_id, id } = user!.commonInfo;
-//
-//     useEffect(() => {
-//         person!.getUserInfo(organization_id, match.params.id || id);
-//     }, [id, match.params.id, organization_id, person]);
-//
-//     const handleClickLogout = () => {
-//         person!.logout();
-//         history.push('/');
-//     };
-//
-//     return person?.userInfo.risk_level && person?.userInfo.group ? (
-//         <div className={styles.container}>
-//             <Card size="contentSize">
-//                 <UserCard
-//                     riskLevel={person?.userInfo.risk_level.value}
-//                     riskColor={person?.userInfo.risk_level.color}
-//                     groupText={person?.userInfo.group.value}
-//                     groupColor={person?.userInfo.group.color}
-//                     image={person?.userInfo.picture}
-//                     onClickLogout={handleClickLogout}
-//                 />
-//             </Card>
-//             <div className={styles.userData}>
-//                 <UserData
-//                     name={`${person.userInfo.first_name} ${person.userInfo.last_name}`}
-//                     position={person.userInfo.position}
-//                     department={person?.userInfo.department.toString()}
-//                     organization={person?.userInfo.organization.toString()}
-//                     email={'ivanov@gasprom.ru'}
-//                     role={user?.commonInfo.role}
-//                 />
-//             </div>
-//         </div>
-//     ) : null;
-// };
-//
 
 export default Form;

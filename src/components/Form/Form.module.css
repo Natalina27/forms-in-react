@@ -1,0 +1,77 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.infoContainer{
+    display: flex;
+    width: max-content;
+    margin-bottom: 40px;
+    cursor: pointer;
+
+}
+
+.infoElement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    height: 55px;
+    border-bottom: 2px solid #eee;
+
+}
+.infoElement:hover .editorIcon {
+    content: '';
+    display: block;
+    cursor: pointer;
+    width: 19px;
+    height: 20px;
+    background: url('../../assets/edit.svg');
+    margin-left: 5px;
+}
+.infoElement:hover .editorIcon:hover {
+    background: url('../../assets/edit-color.svg');
+}
+.userInfo {
+    padding-top: 2px;
+    font-size: 10px;
+}
+
+.description {
+    font-size: 12px;
+    display: flex;
+
+    /* font-size: 12px; */
+    font-weight: bold;
+    justify-content: flex-start;
+    width: 300px;
+    margin-left: auto;
+}
+
+.descriptionOff {
+    display: none;
+}
+
+.input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.editorInput {
+    display: none;
+}
+
+.boxEdit {
+    justify-self: end;
+}
+
+.editFormOff {
+    display: none;
+}
+.boxEditUser {
+    display: none;
+}
+
+.boxEditPosition {
+    display: block;
+}
