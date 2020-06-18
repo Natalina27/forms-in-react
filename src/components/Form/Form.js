@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import s from './Form.module.css';
 import {uuid} from "uuidv4";
 
@@ -21,11 +21,34 @@ const Form = ({
 
     console.log('name', name);
 
+    const [dataState, setDataState] = useState(arrayInfo);
 
+
+    const handleEditData = (id) => {
+        const newItems = [...dataState];
+        newItems.map(item => {
+            if(item.id === id){
+                item.editor = !item.editor;
+            }
+            return newItems;
+        });
+        setDataState([...newItems]);
+    }
+
+    const handleEditValue = (e, id) => {
+        const newItems = [...dataState];
+        newItems.map(item => {
+            if(item.id === id){
+                item.value = e.target.value;
+            }
+            return newItems;
+        });
+        setDataState([...newItems]);
+    }
     return (
         <>
             <div className={s.container}>
-            {arrayInfo.map(item => (
+            {dataState.map(item => (
                 <div key={item.id} className={s.infoContainer}>
                     <div className={s.infoElement}>
                         <div className={s.userInfo}>{item.label}</div>
@@ -44,8 +67,9 @@ const Form = ({
                             <input
                                 type="text"
                                 className={s.input}
+                                disabled={!item.value}
                                 value={item.value}
-                                onChange={()=>{}}
+                                onChange={(e)=> handleEditValue(e,item.id)}
                             />
                         </div>
                         <div
@@ -70,6 +94,7 @@ const Form = ({
                             <label
                                 className={s.editorIcon}
                                 htmlFor={`change`}
+                                onClick={()=>handleEditData(item.id)}
                             />
                         </div>
                     </div>
