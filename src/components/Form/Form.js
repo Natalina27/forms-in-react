@@ -29,25 +29,20 @@ const Form = ({
                 if(newItem.id == target.id){
                     newItem.editor = !newItem.editor;
                 }
-                console.log(newItem);
                 return newItem
             });
-            console.log(newItems);
             setState(newItems)
         }
-        useEffect(()=>{
 
-        },[state])
-
-        const changeInput = (e)=>{
-                const { target } = e;
-                console.log(target.value);
-        };
+        //
+        // const changeInput = (e)=>{
+        //         const { target } = e;
+        // };
     return (
         <>
             <div className={s.container}>
             {state.map(item => (
-                <InputItem item={item} changeEditor={ changeEditor}/>
+                <InputItem key={uuid()} item={item} changeEditor={ changeEditor}/>
             ))}
             </div>
         </>
