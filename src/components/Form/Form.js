@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import s from './Form.module.css';
 import {uuid} from "uuidv4";
+
+import InputItem from "./InputItem";
 
 
 const Form = ({
@@ -19,61 +21,33 @@ const Form = ({
         {label: 'E-MAIL', value: email, editor: false, id: 5, role},
     ];
 
-    console.log('name', name);
+    const [state, setState] = useState(arrayInfo);
+        const changeEditor = (e)=>{
+            const {target} = e;
+            const newItems = state.map(item=>{
+                const newItem = {...item};
+                if(newItem.id == target.id){
+                    newItem.editor = !newItem.editor;
+                }
+                console.log(newItem);
+                return newItem
+            });
+            console.log(newItems);
+            setState(newItems)
+        }
+        useEffect(()=>{
 
+        },[state])
 
+        const changeInput = (e)=>{
+                const { target } = e;
+                console.log(target.value);
+        };
     return (
         <>
             <div className={s.container}>
-            {arrayInfo.map(item => (
-                <div key={item.id} className={s.infoContainer}>
-                    <div className={s.infoElement}>
-                        <div className={s.userInfo}>{item.label}</div>
-                        <div
-                            className={
-                                !item.editor ? s.description : s.descriptionOff
-                            }
-                        >
-                            {item.value}
-                        </div>
-                        <div
-                            className={
-                                !item.editor ? s.editFormOff : s.editForm
-                            }
-                        >
-                            <input
-                                type="text"
-                                className={s.input}
-                                value={item.value}
-                                onChange={()=>{}}
-                            />
-                        </div>
-                        <div
-                            // className=
-                            //     {cx(
-                            //     `boxEdit${role}`,
-                            //     item.label === 'ДОЛЖНОСТЬ' ? 'boxEditPosition' : '',
-                            //     item.label === 'КОМПАНИЯ' && 'boxEditUser',
-                            //     item.label === 'E-MAIL' &&
-                            //     role === 'employee' &&
-                            //     'boxEditUser',
-                            //     item.label === 'ОТДЕЛ' &&
-                            //     role === 'operator' &&
-                            //     'boxEditUser',
-                            // )}
-                        >
-                            <input
-                                className={s.editorInput}
-                                type="checkbox"
-                                id={uuid()}
-                            />
-                            <label
-                                className={s.editorIcon}
-                                htmlFor={`change`}
-                            />
-                        </div>
-                    </div>
-                </div>
+            {state.map(item => (
+                <InputItem item={item} changeEditor={ changeEditor}/>
             ))}
             </div>
         </>
