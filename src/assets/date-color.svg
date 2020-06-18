@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #72b431;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #72b431;
+      }
+    </style>
+  </defs>
+  <g id="ico" transform="translate(1 1)">
+    <rect id="Прямоугольник_скругл._углы_612" data-name="Прямоугольник, скругл. углы 612" class="cls-1" width="20" height="16" rx="2"/>
+    <line id="Фигура_689" data-name="Фигура 689" class="cls-1" x2="20" transform="translate(0 4)"/>
+    <g id="Группа_6_копия" data-name="Группа 6 копия" transform="translate(-1024 -554)">
+      <rect id="Прямоугольник_690" data-name="Прямоугольник 690" class="cls-2" width="2" height="2" transform="translate(1027 565)"/>
+      <rect id="Прямоугольник_690_копия" data-name="Прямоугольник 690 копия" class="cls-2" width="2" height="2" transform="translate(1031 565)"/>
+      <rect id="Прямоугольник_690_копия_2" data-name="Прямоугольник 690 копия 2" class="cls-2" width="2" height="2" transform="translate(1035 565)"/>
+      <rect id="Прямоугольник_690_копия_3" data-name="Прямоугольник 690 копия 3" class="cls-2" width="2" height="2" transform="translate(1039 565)"/>
+    </g>
+    <g id="Группа_6" data-name="Группа 6" transform="translate(-1024 -554)">
+      <rect id="Прямоугольник_690-2" data-name="Прямоугольник 690" class="cls-2" width="2" height="2" transform="translate(1027 561)"/>
+      <rect id="Прямоугольник_690_копия-2" data-name="Прямоугольник 690 копия" class="cls-2" width="2" height="2" transform="translate(1031 561)"/>
+      <rect id="Прямоугольник_690_копия_2-2" data-name="Прямоугольник 690 копия 2" class="cls-2" width="2" height="2" transform="translate(1035 561)"/>
+      <rect id="Прямоугольник_690_копия_3-2" data-name="Прямоугольник 690 копия 3" class="cls-2" width="2" height="2" transform="translate(1039 561)"/>
+    </g>
+  </g>
+</svg>

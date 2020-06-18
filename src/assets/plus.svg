@@ -1,0 +1,18 @@
+<svg id="plus_копия_2" data-name="plus копия 2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #72b431;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <circle id="Эллипс_1223" data-name="Эллипс 1223" class="cls-1" cx="10" cy="10" r="10"/>
+  <line id="Фигура_1224" data-name="Фигура 1224" class="cls-2" y2="10" transform="translate(10 5)"/>
+  <line id="Фигура_1224_копия" data-name="Фигура 1224 копия" class="cls-2" x1="10" transform="translate(5 10)"/>
+</svg>

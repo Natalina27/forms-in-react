@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="Группа_19" width="20" height="16" data-name="Группа 19">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#8792ac;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Прямоугольник_скругл._углы_613" class="cls-1" data-name="Прямоугольник, скругл. углы 613">
+        <rect width="20" height="16" rx="2"/>
+        <rect width="18" height="14" x="1" y="1" fill="none" rx="1"/>
+    </g>
+    <path id="Фигура_933" d="M1176 749l-9 8-9-8" class="cls-1" data-name="Фигура 933"
+          transform="translate(-1157 -747)"/>
+</svg>

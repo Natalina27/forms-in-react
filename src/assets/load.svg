@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.791" height="18.34" viewBox="0 0 14.791 18.34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #72b431;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="ic" transform="translate(1.411 1)">
+    <line id="Фигура_18" data-name="Фигура 18" class="cls-1" x2="12.38" transform="translate(0 16.34)"/>
+    <line id="Фигура_16" data-name="Фигура 16" class="cls-1" y2="11.34" transform="translate(5.69)"/>
+    <path id="Фигура_17" data-name="Фигура 17" class="cls-1" d="M1117.812,753.851l5.5,5.953,5.5-5.953" transform="translate(-1117.81 -746.83)"/>
+  </g>
+</svg>

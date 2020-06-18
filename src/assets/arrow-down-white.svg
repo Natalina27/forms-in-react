@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.501" height="6.03" viewBox="0 0 13.501 6.03">
+  <g 
+    id="left-arrow" 
+    data-name="left-arrow" 
+    fill="none"
+    stroke-width="2px"
+    opacity="30%"
+    transform="translate(0.542 0.841)">
+    <path 
+      id="left-arrow-path" 
+      stroke="white"
+      data-name="left-arrow-path" 
+      d="M1315.709,700.406l-6.209,4-6.209-4" 
+      transform="translate(-1303.291 -700.406)"/>
+  </g>
+</svg>
