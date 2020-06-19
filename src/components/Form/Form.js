@@ -23,6 +23,7 @@ const Form = ({
 
     const [dataState, setDataState] = useState(arrayInfo);
 
+    console.log(dataState);
 
     const handleEditData = (id) => {
         const newItems = [...dataState];
@@ -45,6 +46,7 @@ const Form = ({
         });
         setDataState([...newItems]);
     }
+    console.log('dataState', dataState)
     return (
         <>
             <div className={s.container}>
@@ -72,20 +74,7 @@ const Form = ({
                                 onChange={(e)=> handleEditValue(e,item.id)}
                             />
                         </div>
-                        <div
-                            // className=
-                            //     {cx(
-                            //     `boxEdit${role}`,
-                            //     item.label === 'ДОЛЖНОСТЬ' ? 'boxEditPosition' : '',
-                            //     item.label === 'КОМПАНИЯ' && 'boxEditUser',
-                            //     item.label === 'E-MAIL' &&
-                            //     role === 'employee' &&
-                            //     'boxEditUser',
-                            //     item.label === 'ОТДЕЛ' &&
-                            //     role === 'operator' &&
-                            //     'boxEditUser',
-                            // )}
-                        >
+                        <div>
                             <input
                                 className={s.editorInput}
                                 type="checkbox"

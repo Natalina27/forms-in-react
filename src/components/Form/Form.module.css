@@ -40,8 +40,6 @@
 .description {
     font-size: 12px;
     display: flex;
-
-    /* font-size: 12px; */
     font-weight: bold;
     justify-content: flex-start;
     width: 300px;
