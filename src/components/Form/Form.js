@@ -69,7 +69,7 @@ const Form = ({
                             <input
                                 type="text"
                                 className={s.input}
-                                disabled={!item.value}
+                                // disabled={!item.value}
                                 value={item.value}
                                 onChange={(e)=> handleEditValue(e,item.id)}
                             />
